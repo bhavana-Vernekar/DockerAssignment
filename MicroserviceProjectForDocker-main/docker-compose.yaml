@@ -1,0 +1,22 @@
+version: '3'
+services:
+  blogcomment:
+    image: bhavana0686/blogcomment
+    ports:
+      - 4001:4001
+  blogpost:
+    image: bhavana0686/blogpost
+    ports:
+      - 4002:4002
+  eventbus:
+    image: bhavana0686/eventbus
+    ports:
+      - 4003:4003
+  QueryService:
+    image: bhavana0686/queryservice
+    ports:
+      - 4004:4004
+  frontend:
+    image: bhavana0686/frontend
+    ports:
+      - 3000:3000
